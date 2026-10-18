@@ -48,6 +48,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica N
 .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:11px;font-weight:700;font-size:15px;text-decoration:none;transition:.15s;border:none;cursor:pointer}
 .btn-yellow{background:var(--yellow);color:#231d00;box-shadow:0 6px 18px rgba(255,212,59,.35)}
 .btn-yellow:hover{transform:translateY(-1px)}
+.btn.is-soon{opacity:.55;pointer-events:none;box-shadow:none}
 .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.45);color:#fff}
 .btn-ghost:hover{background:rgba(255,255,255,.1)}
 /* ---------- экспорт ДЗ в Word ---------- */
@@ -270,15 +271,14 @@ body.ctor section.lesson,body.ctor .task,body.ctor .editor,body.ctor .callout,bo
       <span class="chip">Прогресс сохраняется</span>
     </div>
     <div class="hero-actions">
-      <a class="btn btn-yellow" href="#sec1">Начать урок</a>
+      <a class="btn btn-yellow" href="#sec1">Начать урок</a><a class="btn btn-yellow" href="urok-5-stroki.html">Урок 5: Строки →</a>
       <span class="conspect-wrap"><button type="button" class="btn btn-ghost" id="btn-conspect">📄 Скачать конспект урока</button>
         <span class="conspect-menu" id="conspect-menu">
           <button type="button" class="conspect-item" data-csfmt="docx"><span class="cs-ic">📝</span><span class="cs-tx">Word (.docx)<small>для редактирования</small></span></button>
           <button type="button" class="conspect-item" data-csfmt="pdf"><span class="cs-ic">📕</span><span class="cs-tx">PDF (.pdf)<small>для печати и отправки</small></span></button>
         </span></span>
       <a class="btn btn-ghost" href="#howto">Как пользоваться редактором</a>
-      <a class="btn btn-ghost" href="urok-3-cikly.html">← Урок 3: циклы</a>
-    </div>
+      <a class="btn btn-ghost" href="urok-3-cikly.html">← Урок 3: циклы</a>    </div>
   </section>
 </div>
 
@@ -1282,7 +1282,7 @@ for c in word:
 print("Букв «а»:", count)</textarea>
     </div>
     <p>Получилось <code>Букв «а»: 2</code> — цикл прошёл по всем одиннадцати буквам слова. Методы строк, срезы слов и split() — тема следующего занятия. А пока закрепите списки домашними задачами.</p>
-    <div class="hero-actions"><a class="btn btn-ghost" href="urok-3-cikly.html">← Повторить урок 3: циклы</a></div>
+    <div class="hero-actions"><a class="btn btn-yellow" href="urok-5-stroki.html">Урок 5: Строки →</a><a class="btn btn-ghost" href="urok-3-cikly.html">← Повторить урок 3: циклы</a></div>
   </div>
 </section>
 
@@ -1291,7 +1291,7 @@ print("Букв «а»:", count)</textarea>
 
 <footer>
   Урок 4 · Списки · Python для подготовки к ЕГЭ по информатике · Код выполняется прямо в браузере (Pyodide / WebAssembly)<br>
-  <a href="index.html">← Урок 1: Знакомство с Python</a> · <a href="urok-2-usloviya.html">← Урок 2: Условия и логика</a> · <a href="urok-3-cikly.html">← Урок 3: Циклы</a> · Файл автономный: интернет нужен только при первом запуске Python. Ваш код и прогресс хранятся локально в браузере.
+  <a href="index.html">← Урок 1: Знакомство с Python</a> · <a href="urok-2-usloviya.html">← Урок 2: Условия и логика</a> · <a href="urok-3-cikly.html">← Урок 3: Циклы</a> · <a href="urok-5-stroki.html">Урок 5: Строки →</a> · Файл автономный: интернет нужен только при первом запуске Python. Ваш код и прогресс хранятся локально в браузере.
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
